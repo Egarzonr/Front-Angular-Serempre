@@ -1,0 +1,22 @@
+.small-inf-container {
+  height: 136px;
+  border: solid 2px;
+  border-color: #eeeff2;
+  border-radius: 10px;
+  display: grid;
+  justify-content: space-between;
+}
+
+.choice-container {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pad-24-title {
+  padding: 20px 0 0 10px;
+}
+.pad-24-info {
+  padding: 0 10px 20px 10px;
+  margin-top: 8px;
+}

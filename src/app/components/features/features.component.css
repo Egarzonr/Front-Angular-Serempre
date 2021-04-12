@@ -1,0 +1,19 @@
+.small-inf-container {
+  height: 68px;
+  border: solid 2px;
+  border-color: #eeeff2;
+  border-radius: 10px;
+}
+
+.pad-24-title {
+  padding: 18px 0 0 20px;
+}
+.pad-20-info {
+  padding: 10px 0 0 6px;
+  margin-top: 8px;
+}
+
+.pad-price {
+  padding: 10px 0 10px 74px;
+  margin-top: 8px;
+}
