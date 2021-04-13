@@ -4,18 +4,21 @@
   </div>
 
   <div class="row">
-    <div class="col-6">
+    <div class="col-6 ont-left">
       <app-carousel></app-carousel>
     </div>
-    <div class="col-6">
+    <div class="col-6 cont-right">
       <app-info></app-info>
       <app-choice></app-choice>
-      <app-warranty></app-warranty>
-      <app-features></app-features>
+      <app-warranty (msgfromWarranty)="msgforFooter($event)"></app-warranty>
+      <app-features (msgfromFeatures)="msgforFooterTwo($event)"></app-features>
       <app-specifications></app-specifications>
+      <app-empty></app-empty>
     </div>
   </div>
-  <div>
-    <app-footer></app-footer>
+
+  <div footer class="fixed-bottom">
+    <app-footer [msgFooter]="sendFooter" [msgFooter2]="sendFooter2">
+    </app-footer>
   </div>
 </div>

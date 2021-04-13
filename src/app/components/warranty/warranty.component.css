@@ -1,29 +1,3 @@
-.small-inf-container {
-  height: 96px;
-  border: solid 2px;
-  border-color: #eeeff2;
-  border-radius: 10px;
-}
-
-.small-inf-container:hover {
-  height: 96px;
-  border: solid 2px;
-  border-color: #b6bcc6;
-  border-radius: 10px;
-}
-.small-inf-container:active {
-  height: 96px;
-  border: solid 2px;
-  border-color: #1e96d4;
-  border-radius: 10px;
-}
-.small-inf-container:focus {
-  height: 96px;
-  border: solid 2px;
-  border-color: #1e96d4;
-  border-radius: 10px;
-}
-
 .pad-24-title {
   padding: 18px 0 0 24px;
 }
@@ -35,10 +9,38 @@
   padding: 18px 0 0 10px;
 }
 .pad-20-info {
-  padding: 0 24px 20px 10px;
+  padding: 0 0 20px 10px;
   margin-top: 8px;
 }
 .pad-price {
   padding: 25px 0 20px 60px;
   margin-top: 8px;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#w0 {
+  display: none;
+}
+#w1 {
+  display: none;
+}
+
+label:hover {
+  border: 2px solid #b6bcc6;
+}
+
+label {
+  height: 96px;
+  border: solid 2px #eeeff2;
+  border-radius: 8px;
+  max-width: 100%;
+  min-width: 100%;
 }

@@ -12,3 +12,36 @@
   max-height: 1701px;
   height: 100%;
 } */
+/* 
+.left-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+} */
+
+/* .ont-left {
+  position: fixed;
+  left: 0;
+  display: block;
+  padding-left: 70px;
+}
+
+.cont-right {
+  position: absolute;
+  right: 0;
+  display: block;
+  padding-right: 70px;
+} */
+
+body {
+  min-height: 100vh;
+}
+
+footer {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}

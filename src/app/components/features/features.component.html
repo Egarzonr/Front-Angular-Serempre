@@ -1,13 +1,20 @@
 <div class="container m-top-72">
   <div class="components-title">Features.</div>
 
-  <div class="row small-inf-container m-top-12">
-    <div class="cards-title pad-24-title">Voice Assistant support</div>
-  </div>
-  <div class="row small-inf-container m-top-16">
-    <div class="col-9">
-      <div class="cards-title pad-20-info">Customizable controls</div>
+  <input type="checkbox" id="w0" checked="checked" />
+  <label class="m-top-12" id="thumb0" for="w0" (click)="carousel(0)" #thumb0>
+    <div class="row small-inf-container">
+      <div class="cards-title pad-24-title">Voice Assistant support</div>
     </div>
-    <div class="cards-title pad-price col-3">+ $75</div>
-  </div>
+  </label>
+
+  <input type="checkbox" id="w1" />
+  <label class="m-top-16" id="thumb1" for="w1" (click)="carousel(1)" #thumb1>
+    <div class="row small-inf-container">
+      <div class="col-9">
+        <div class="cards-title pad-20-info">Customizable controls</div>
+      </div>
+      <div class="cards-title pad-price col-3">+ $75</div>
+    </div>
+  </label>
 </div>

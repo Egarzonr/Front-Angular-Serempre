@@ -1,35 +1,67 @@
 <div class="container margin-top-container">
   <div class="col">
-    <div class="large-img-container text-center">
-      <img class="size-img-l" src="assets/img/img0l.png" alt="" />
-    </div>
-
-    <div class="row m-top-16">
-      <div class="miniature-container"></div>
-
-      <a class="small-img-container" onclick="changeImg()">
-        <img class="size-img-s" src="assets/img/img0s.png" alt="" />
-      </a>
-      <a class="small-img-container">
-        <img class="size-img-s" src="assets/img/img0s.png" alt="" />
-      </a>
-      <a class="small-img-container">
-        <img class="size-img-s" src="assets/img/img0s.png" alt="" />
-      </a>
+    <div>
+      <figure>
+        <img src="assets/img/img0l.png" alt="" id="mainImg" #mainImg />
+      </figure>
+      <div class="thumb_img_list">
+        <ul>
+          <li>
+            <input type="checkbox" id="t1" checked="checked" />
+            <label id="thumb1" for="t1">
+              <img
+                src="assets/img/img0l.png"
+                alt=""
+                id="thumb1"
+                #thumb1
+                (click)="carousel(0)"
+              />
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="t2" />
+            <label id="thumb2" for="t2">
+              <img
+                src="assets/img/img1l.png"
+                alt=""
+                id="thumb2"
+                #thumb2
+                (click)="carousel(1)"
+              />
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="t3" />
+            <label id="thumb3" for="t3">
+              <img
+                src="assets/img/img02l.png"
+                alt=""
+                id="thumb3"
+                #thumb3
+                (click)="carousel(2)"
+              />
+            </label>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="container m-top-74">
       <div class="row">
         <div class="col">
           <div class="text-center">
-            <img class="size-icons" src="assets/icons/soundwave.svg" alt="" />
+            <img
+              class="size-icons img-fluid"
+              src="assets/icons/soundwave.svg"
+              alt=""
+            />
           </div>
           <div class="icons-text">Customizable Touch Controls</div>
         </div>
         <div class="col">
           <div class="text-center">
             <img
-              class="size-icons"
+              class="size-icons img-fluid"
               src="assets/icons/studio_monitoring.svg"
               alt=""
             />
@@ -39,7 +71,7 @@
         <div class="col">
           <div class="text-center">
             <img
-              class="size-icons"
+              class="size-icons img-fluid"
               src="assets/icons/noise_cancellation.svg"
               alt=""
             />

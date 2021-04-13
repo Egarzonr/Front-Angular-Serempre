@@ -1,15 +1,61 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   selector: 'app-features',
   templateUrl: './features.component.html',
-  styleUrls: ['./features.component.css']
+  styleUrls: ['./features.component.css'],
 })
 export class FeaturesComponent implements OnInit {
+  @Output() msgfromFeatures = new EventEmitter<number>();
+  @ViewChild('thumb0', { static: true }) thumb0Element: ElementRef;
+  @ViewChild('thumb1', { static: true }) thumb1Element: ElementRef;
 
-  constructor() { }
+  wPrice: number;
+
+  constructor() {}
 
   ngOnInit(): void {
+    this.thumb0Element.nativeElement.style.setProperty(
+      'border',
+      '2px solid #1e96d4'
+    );
   }
 
+  carousel(id) {
+    // console.log(id);
+    if (id == 0) {
+      this.wPrice = id;
+      console.log(this.wPrice);
+      this.msgfromFeatures.emit(this.wPrice);
+
+      this.thumb0Element.nativeElement.style.setProperty(
+        'border',
+        '2px solid #1e96d4'
+      );
+      this.thumb1Element.nativeElement.style.setProperty(
+        'border',
+        '2px solid #eeeff2'
+      );
+    } else {
+      this.wPrice = id;
+      console.log(this.wPrice);
+      this.msgfromFeatures.emit(this.wPrice);
+
+      this.thumb1Element.nativeElement.style.setProperty(
+        'border',
+        '2px solid #1e96d4'
+      );
+      this.thumb0Element.nativeElement.style.setProperty(
+        'border',
+        '2px solid #eeeff2'
+      );
+    }
+  }
 }

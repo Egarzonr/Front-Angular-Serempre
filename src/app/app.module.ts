@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //material
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTabGroup } from '@angular/material/tabs';
+import { EmptyComponent } from './components/empty/empty.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MatTabGroup } from '@angular/material/tabs';
     WarrantyComponent,
     ChoiceComponent,
     InfoComponent,
+    EmptyComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],

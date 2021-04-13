@@ -2,19 +2,26 @@
   <div class="components-title">Choose your finish.</div>
 
   <div class="row choice-container m-top-12">
-    <div class="col small-inf-container button">
-      <div class="cards-title pad-24-title">Ivory White</div>
-      <div class="cards-info pad-24-info">
-        For the past 75 years, Sennheiser has put sound first. The new MOMENTUM
-        True.
+    <input type="checkbox" id="t0" checked="checked" />
+    <label id="thum0" for="t0" (click)="carousel(0)" #thumb0>
+      <div class="col small-inf-container button">
+        <div class="cards-title pad-24-title">Ivory White</div>
+        <div class="cards-info pad-24-info">
+          For the past 75 years, Sennheiser has put sound first. The new
+          MOMENTUM True.
+        </div>
       </div>
-    </div>
-    <div class="col small-inf-container button">
-      <div class="cards-title pad-24-title">Matte Black</div>
-      <div class="cards-info pad-24-info">
-        Of all of the celestial bodies that capture our attention and
-        fascination as astronomers.
+    </label>
+
+    <input type="checkbox" id="t1" />
+    <label id="thumb1" for="t1" (click)="carousel(1)" #thumb1>
+      <div class="col small-inf-container button">
+        <div class="cards-title pad-24-title">Matte Black</div>
+        <div class="cards-info pad-24-info">
+          Of all of the celestial bodies that capture our attention and
+          fascination as astronomers.
+        </div>
       </div>
-    </div>
+    </label>
   </div>
 </div>
